@@ -1,0 +1,11 @@
+prefix=/usr/local
+includedir=/usr/local/include
+libdir=/usr/local/lib
+
+Name: libOSRM
+Description: Project OSRM library
+Version: 5.20.0
+Requires:
+Libs: -L${libdir} -losrm
+Libs.private: /opt/local/lib/libboost_regex-mt.dylib /opt/local/lib/libboost_date_time-mt.dylib /opt/local/lib/libboost_chrono-mt.dylib /opt/local/lib/libboost_filesystem-mt.dylib /opt/local/lib/libboost_iostreams-mt.dylib /opt/local/lib/libboost_thread-mt.dylib /opt/local/lib/libboost_system-mt.dylib /opt/local/lib/libtbb.dylib /opt/local/lib/libtbbmalloc.dylib /opt/local/lib/libz.dylib
+Cflags: -I/opt/local/include -I/opt/local/include -I/opt/local/include -I/opt/local/include -I/opt/local/include -I/opt/local/include -I/usr/local/include -I/usr/local/include/osrm  -std=c++14 -DBOOST_TEST_DYN_LINK -DBOOST_TEST_DYN_LINK -DBOOST_SPIRIT_USE_PHOENIX_V3 -DBOOST_RESULT_OF_USE_DECLTYPE -DBOOST_FILESYSTEM_NO_DEPRECATED
