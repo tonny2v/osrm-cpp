@@ -36,8 +36,8 @@ include_directories(SYSTEM ${LibOSRM_INCLUDE_DIRS})
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${LibOSRM_CXXFLAGS}")
 
 # libtest
-add_library(test SHARED test.cpp)
+add_library(test SHARED test.cpp point.cpp)
 
 # main using libtest
-add_executable(main main.cpp test.h)
+add_executable(main main.cpp test.h point.cpp point.h)
 target_link_libraries(main test)

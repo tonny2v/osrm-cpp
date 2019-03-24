@@ -5,10 +5,13 @@
 #ifndef OSRM_EXAMPLE_TEST_H
 #define OSRM_EXAMPLE_TEST_H
 
+
+
 #ifdef __cplusplus
 extern "C" {
 #endif
-int add(int, int);
+    int sum(int, int);
+    int p_sum(int, int);
 #ifdef __cplusplus
 }
 #endif

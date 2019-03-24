@@ -9,9 +9,18 @@ package main
 */
 import "C" // 切勿换行再写这个
 
-import "fmt"
+import (
+    "fmt"
+)
 
 func main() {
-	fmt.Println(C.add(C.int(200), C.int(1)))
+
+    // function
+    fmt.Println("calling cpp function...")
+	fmt.Println(C.sum(C.int(1), C.int(1)))
+
+	// class function wrapper
+    fmt.Println("calling cpp class function by wrapper...")
+	fmt.Println(C.p_sum(100, 100))
 }
 

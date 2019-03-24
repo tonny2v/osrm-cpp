@@ -6,5 +6,5 @@
 #include "test.h"
 
 int main(){
-    std::cout << add(1,3) << std::endl;
+    std::cout << sum(1,3) << std::endl;
 }
